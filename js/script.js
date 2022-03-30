@@ -22,3 +22,15 @@ $('#location').on('click', function(e){
     $('html, body').animate({scrollTop: $('.contacts').offset().top}, 1000)
     $('body input:checkbox').prop('checked', false);
 })
+
+$('.modal-overlay').on('click', function(e){
+  if($(e.target).closest('.modal').length ==0){
+  $(this).fadeOut()
+  }
+})
+$('.close').on('click', function(){
+  $(this).parents('.modal-overlay').fadeOut()
+})
+$('button[name=book]').on('click', function(){
+  $('.modal-overlay').fadeIn()
+})

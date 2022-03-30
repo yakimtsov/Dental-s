@@ -1,3 +1,6 @@
+*{
+    text-decoration: none;
+}
 body{
     font-family: 'Open Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
@@ -212,4 +215,103 @@ body{
 }
 .contacts-text{
     margin-right: 30px;
+}
+
+.modal-overlay{
+    display: none;
+    background: rgba(0, 0, 0, .4);   
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+}
+.modal{
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 10px;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+.modal-content>div{
+    margin-right: 50px;
+}
+.close{
+    font-weight: bold;
+    font-size: 22px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+.book-content{
+    display: flex;
+    justify-content: space-between;
+}
+.book-rightside{
+    margin-right: 50px;
+}
+.book-rightside img{
+    width: 30px;
+}
+.rs-title{
+    font-size: 24px;
+    font-weight: 300;
+    font-family: Poppins;
+    margin-bottom: 15px;
+}
+.rs-text{
+    font-size: 14px;
+    font-weight: 200;
+    margin-bottom: 25px;
+}
+.rs-contact{
+    display: flex;
+    align-items: center;
+}
+.rs-contact img{
+    margin: 10px 10px 10px 0;
+}
+.rs-contact a, .rs-contact span{
+    color: #06486e;
+    font-size: 14px;
+
+}
+.book-rightside{
+    border-radius: 15px;
+    padding: 30px;
+    background-color: #88caf0;
+    max-width: 290px;
+}
+.top-content{
+    display: flex;
+    margin-bottom: 50px;
+}
+.top-content div:first-child{
+    margin-right: 20px;
+}
+.ls-input{
+    border-bottom: 2px solid #88caf0 !important;
+    border: none;
+    margin-top: 10px;
+}
+.ls-input::placeholder{
+    font-size: 12px;
+    font-weight: 100;
+    padding: 10px 0;
+}
+.ls-input:focus{
+    outline-color: #ffffff;
+    color: #06486e;
+}
+.form__label{
+    font-size: 12px;
+    font-weight: 500;
+}
+.form-button{
+    margin-top: 30px;
 }
