@@ -237,33 +237,37 @@
                             </div>
                         </div>
                         <div class="book-leftside">
-                            <form method="POST">
+                            <form id="bookForm">
                                 <div class="top-content">
                                     <div class="form">
                                         <label class="form__label" for="firts-name">First name</label>
-                                        <input placeholder="Joe" class="ls-input" type="text" name="first-name">
+                                        <input placeholder="Joe" class="ls-input" type="text" name="first-name" id="firstName">
                                     </div>
                                     <div class="form">
                                         <label class="form__label" for="last-name">Last name</label>
-                                        <input placeholder="Doe" class="ls-input" type="text" name="last-name">
+                                        <input placeholder="Doe" class="ls-input" type="text" name="last-name" id="lastName">
                                     </div>
                                 </div>
                                 <div>
                                     <div class="top-content">
                                         <div class="form">
                                             <label class="form__label" for="mail">Mail</label>
-                                            <input placeholder="yourmail@gmail.com" class="ls-input" type="mail" name="mail">
+                                            <input placeholder="yourmail@gmail.com" class="ls-input" type="mail" name="mail" id="email">
                                         </div>
                                         <div class="form">
                                             <label class="form__label" for="phone">Phone number</label>
-                                            <input placeholder="+(030) 303-3030" class="ls-input" type="phone" name="phone">
+                                            <input placeholder="(030) 303-3030" class="ls-input" type="phone" name="phone" id="phoneNumber">
                                         </div>
                                     </div>
                                     <div class="form">
                                         <label class="form__label" for="date">Date which you the most comfortable</label>
-                                        <input  class="ls-input" type="datetime-local" name="date">
+                                        <input  class="ls-input" type="datetime-local" name="date" id="date">
                                     </div>
-                                    <button class="header-button form-button" type="submit">Booking now</button>
+                                    <div class="success">
+                                        <img src="./img/booking.svg" alt="">
+                                        <p class="success-text">You successfully created your booking!</p>
+                                    </div>
+                                    <button class="header-button form-button" type="submit" id="submitData">Booking now</button>
                                 </div>
                             </form>
                         </div>
@@ -282,3 +286,4 @@
     <script src="./js/script.js"></script>
 </body>
 </html>
+<script type="module" src="./js/submit.js"></script>
